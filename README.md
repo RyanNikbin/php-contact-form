@@ -1,6 +1,6 @@
 # Simple PHP Email Contact Form
 
-This PHP script handles contact form submissions (name, email, message) and sends them via email using **PHPMailer** and **SMTP**.
+This PHP script handles contact form submissions (name, email, and message) and sends them via email using **PHPMailer** and **SMTP**.
 
 ### How It Works:
 1. **Form Submission**: The user fills out a contact form with their name, email, and message.
@@ -14,6 +14,19 @@ This PHP script handles contact form submissions (name, email, message) and send
 - A valid SMTP server (e.g., `smtp.example.com`)
 
 ### Setup:
-1. Install dependencies via Composer:
+1. Clone the repository:
    ```bash
-   composer install
+   git clone https://github.com/RyanNikbin/php-contact-form.git
+
+##Configuration:
+Edit the email-sending script to include your SMTP server credentials:
+
+php
+Copy
+$mail->isSMTP();  // Send using SMTP
+$mail->Host       = 'smtp.example.com';   // Set the SMTP server to send through
+$mail->SMTPAuth   = true;                 // Enable SMTP authentication
+$mail->Username   = 'your-email@example.com'; // SMTP username
+$mail->Password   = 'your-email-password';    // SMTP password
+$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Enable implicit TLS encryption
+$mail->Port       = 587;                  // TCP port to connect to; use 587 for STARTTLS
