@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Form</title>
+</head>
+<body>
+    <form action="email-sender.php" method="post">
+        <label for="name">Your Name:</label>
+        <input type="text" name="name" id="name" required><br>
+
+        <label for="email">Your Email:</label>
+        <input type="email" name="email" id="email" required><br>
+
+        <label for="message">Your Message:</label><br>
+        <textarea name="message" id="message" rows="6" required></textarea><br>
+
+        <button type="submit">Send Message</button>
+    </form>
+</body>
+</html>
