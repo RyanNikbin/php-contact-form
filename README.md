@@ -2,6 +2,8 @@
 
 This PHP script handles contact form submissions (name, email, and message) and sends them via email using **PHPMailer** and **SMTP**.
 
+![PHPMailer](phpmailer.png)
+
 ### How It Works:
 1. **Form Submission**: The user fills out a contact form with their name, email, and message.
 2. **PHPMailer**: The form data is sent to the server, where PHPMailer is used to send the email via SMTP.
