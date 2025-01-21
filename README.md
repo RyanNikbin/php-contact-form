@@ -18,8 +18,8 @@ This PHP script handles contact form submissions (name, email, and message) and 
    ```bash
    git clone https://github.com/RyanNikbin/php-contact-form.git
 
-##Configuration:
-Edit the email-sending script to include your SMTP server credentials:
+### Configuration:
+2. Edit the email-sending script to include your SMTP server credentials:
 
 ```php
 
