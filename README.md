@@ -22,7 +22,7 @@ This PHP script handles contact form submissions (name, email, and message) and 
 Edit the email-sending script to include your SMTP server credentials:
 
 ```php
-Copy
+
 $mail->isSMTP();  // Send using SMTP
 $mail->Host       = 'smtp.example.com';   // Set the SMTP server to send through
 $mail->SMTPAuth   = true;                 // Enable SMTP authentication
